@@ -4,7 +4,6 @@ const config = require('../playwright.config');
 
 test("successful authorization", async ({ page }) => {
   
-  //await page.goto("https://netology.ru/?modal=sign_in");
   await page.goto(config.url);
   await page.locator('[placeholder="Email"]').click();
   await page.locator('[placeholder="Email"]').fill(user.emailValid);
@@ -17,7 +16,6 @@ test("successful authorization", async ({ page }) => {
 
 test("unsuccessful authorization", async ({ page }) => {
      
-  //await page.goto("https://netology.ru/?modal=sign_in");
   await page.goto(config.url);
   await page.locator('[placeholder="Email"]').click();
   await page.locator('[placeholder="Email"]').fill(user.emailInvalid);

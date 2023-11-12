@@ -6,7 +6,8 @@ const config = {
     use: {
       launchOptions: {
         headless: false,
-        slowMo: 500,      },
+        slowMo: 500,      
+      },
     },
     projects: [
       {
